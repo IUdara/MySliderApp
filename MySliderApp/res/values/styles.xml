@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="ExampleTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="homeAsUpIndicator">@drawable/new_indicator</item>
+        <item name="android:homeAsUpIndicator">@drawable/new_indicator</item>
+        <item name="actionOverflowButtonStyle">@style/customOverflowButtonStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/customOverflowButtonStyle</item>
+    </style>
+
+    <!-- overflow button style -->
+
+    <style name="customOverflowButtonStyle" parent="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_launcher</item>
+    </style>
+
+    <style name="MyTheme" parent="@style/ExampleTheme">
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="displayOptions">showCustom</item>
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+
+</resources>
